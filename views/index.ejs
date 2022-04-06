@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+<!--    upload  1 file-->
+    <form action="/profile" method="post" enctype="multipart/form-data">
+      <input type="file" name="avatar" />
+      <button type="sumbit">Save</button>
+    </form>
+    <!--    upload  nhieu file-->
+    <form action="/profilearray" method="post" enctype="multipart/form-data">
+      <input type="file" name="avatar" multiple/>
+      <button type="sumbit">Save</button>
+    </form>
+  </body>
+</html>
